@@ -1,0 +1,164 @@
+    @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+    html {
+        font-family: 'El Messiri', sans-serif;
+    }
+    
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    header {
+        display: flex;
+        width: 1250px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        font-size: 60px;
+        font-family: 'Original Surfer', cursive;
+    }
+    
+    .level {
+        display: flex;
+        padding: 8px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #fced1af3;
+        background-color: #fd91b2;
+        border-radius: 4px;
+    }
+    
+    .reset {
+        display: flex;
+        padding: 12px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: 3px solid #fced1af3;
+        background-color: #fd91b2;
+        border-radius: 4px;
+    }
+    
+    .level>p:last-child {
+        font-size: 28px;
+        color: white;
+        text-align: center;
+    }
+    
+    article {
+        position: relative;
+        display: flex;
+        margin-bottom: 35px;
+    }
+    
+    article>*:not(:first-child) {
+        margin-left: 50px;
+    }
+    
+    #tower1,
+    #tower2,
+    #tower3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 370px;
+        width: 360px;
+        border-bottom: 20px solid #ffb1cf;
+        border-radius: 5px;
+    }
+    
+    #tower1::after,
+    #tower2::after,
+    #tower3::after {
+        background-color: #ffb1cf;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 300px;
+        width: 20px;
+        position: absolute;
+        border-radius: 5px;
+    }
+    
+    .disk1,
+    .disk2,
+    .disk3,
+    .disk4,
+    .disk5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+        height: 30px;
+        z-index: 2;
+    }
+    
+    .disk1 {
+        background: #fd9268;
+        width: 100px;
+    }
+    
+    .disk2 {
+        background: #a000fd;
+        width: 150px;
+    }
+    
+    .disk3 {
+        background: #fd00f0;
+        width: 200px;
+    }
+    
+    .disk4 {
+        background: #ffbb00;
+        width: 250px;
+    }
+    
+    .disk5 {
+        background: #20b2aa;
+        width: 300px;
+    }
+    
+    .disk1:hover,
+    .disk1:focus {
+        background: #ffff00;
+    }
+    
+    .disk2:hover,
+    .disk2:focus {
+        background: #40e0d0;
+    }
+    
+    .disk3:hover,
+    .disk3:focus {
+        background: #b22222;
+    }
+    
+    .disk4:hover,
+    .disk4:focus {
+        background: #00008b;
+    }
+    
+    .disk5:hover,
+    .disk5:focus {
+        background: #808000;
+    }
+    
+    #moves {
+        font-size: 24px;
+        font-weight: bold;
+    }
